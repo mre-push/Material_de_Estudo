@@ -1,0 +1,87 @@
+/*********** COLUNA FALSA ************/
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+#container {
+	border: 1px solid red;
+	width: 960px;/*720px; aqui deve ser fixo, pois caso não for irá quebrar as linhas */
+	margin: 0 auto;
+	background: #fff url(imagens/coluna.png) repeat-y left top;
+	min-width: 720px;
+	max-width: 1280px;
+	/* max-width: 960px; Por mais que expanda a tela, ela para em 960px, não alargando mais o conteúdo. */
+	/* min-height mesmo funcionamento */
+	/* max-height mesmo funcionamento */
+}
+
+#marca {
+    width: 100%; /*sem necessidade pois a DIV já ocupa o 100%*/
+	height: 200px;
+	background: #225992 url(imagens/cabecalho2.jpg) no-repeat center;
+	text-align: center;
+	line-height: 200px;
+}
+
+/*
+#imagem {
+	width: 90%;
+	overflow: hidden; esconder o conteúdo que o ultrapassa os limites da imagem 
+	border: 1px solid red;
+}
+*/
+
+#conteudo {
+	width: 75%;/*520px; pra passar para porcentagem, é necessário saber quanto que 520 é em porcento de 720 = 74.28*/
+	float: right;
+}
+
+#navegacao {
+	width: 23%;/*180px; pra passar para porcentagem, é necessário saber quanto que 180 é em porcento de 720 = 25.71*/
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+   /*background: #d1d1d1; */
+}
+
+#conteudo-principal {
+	width: 63%;/* 320+180=500, 320 é 64% */
+	float: left;
+}
+
+img.img-noticia {
+	width: 94%;
+	padding: 2%;
+	max-width: 600px; /*largura máxima para a imagem */
+}
+
+#conteudo-secundario {
+	border: 1px solid red;
+	width: 34%;/* 320+180=500, 180 é 36% */
+	float: right;
+	background: #d1d1d1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#navegacao ul {
+	list-style: none;
+}
+
+#navegacao li a {
+	text-decoration: none;
+}
+
+#rodape {
+	clear: both;
+	background: #c4c4c4;
+	padding: 5px;
+}

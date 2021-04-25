@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Posicionamentos (static, raltive, absolute e fixed)</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+           background: #007fc7;
+		}
+		#container{
+			background: #FFF;
+			width: 800px;
+			margin: 10px auto;
+			padding: 10px;
+			position: relative;
+			/*Uma maneira de centralizar a margem é colocar
+			margin: 10px (margem superior o 10) auto; (que seria as laterais)*/ 
+		}
+		p{
+			width: 300px;/*com isso irá ocupar 300px de largura*/
+		}
+		.relative{
+			border: 1px solid red;
+			position: relative;
+			/*top , right, bottom, left (Para se movimentar o paragrafo
+			nós usamos propriedades para movimentar o paragrafo, como o top de topo , right de direita, bottom de inferior e left de esquerda.*/
+			top: 20px;
+			left: 90px;
+			/*com os exemplos acima, nós movimentamos o paragrafo que está com a class relative em 90px para a esquerda e 20 para baixo partindo da sua posição inicial, ou seja, 20 pixels de distância do topo*/
+		}
+		.absolute {
+			border: 1px solid red;
+			background: #f2f2f2;
+			position: absolute;
+			top: 80px;
+			right: 80px;
+		}
+		.fixed {
+			border: 1px solid red;
+			background: #f2f2f2;
+			position: fixed;
+			top: 0px;
+			right: 0px;
+		}
+	</style>
+</head>
+<body>
+      <div id="container">
+      	<h1>Paragrafo 1</h1>
+        <p class="fixed">Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição. Lorem Ipsum tem sido o texto fictício padrão da indústria desde 1500 . Baseado na posição inicial do elemento isso é o relativo, abxoluto defina que uma caixa que é removida no fluxo do conteúdo vc consegue alinhar essa caixa baseado no conteiner qe tenha essa posição, o fixo é baseado a sua posição de acordo com a tela.</p>
+
+        <p class="relative">Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição. Quando um impressor desconhecido pegou um modelo de impressão e embaralhou-o para fazer um livro de amostra de tipos.</p>
+
+        <p class="absolute">Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição. Lorem Ipsum tem sido o texto fictício padrão da indústria desde.</p>
+      </div>
+</body>
+</html>

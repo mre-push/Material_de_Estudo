@@ -1,0 +1,46 @@
+/* Herança:; 
+Aplica-se formatações e essas formatações são aplicadas dentro do 
+elemento que eu selecionei. */
+
+* {
+	border: 1px solid blue;
+}
+
+body{
+	color: red;
+	font-size: 25px;
+	/*border: 1px solid blue;*/
+	background: gray;
+}
+
+/* Especificidade
+
+Descendência, essa define quais regras serão aplicadas 
+primeiro
+#pagina p{
+	color: yellow !important; /* Define que este atributo é mais importante que o outro } */
+
+
+
+/*
+#pagina p{
+	color: black; }
+Se um seletor for mais específico que outro a regra mais específica será aplicada
+(terá precedência sobre regras mais gerais ). SENDO ASSIM, abaixo temos que o * irá fazer tudo em 
+RED mas o H2 em ESPECÍFICO IRÁ FICAR BRANCO/WHITE. E COM O ID É MAI ESPECÍFICO DO QUE COM O CLASS */
+* {
+	color: red;
+}
+
+h2 { /* APLICADO TERCEIRO geral*/
+	color: white;
+}
+
+h2.verde { /* APLICADO SEGUNDO class */
+	color: green;
+}
+
+h2#amarelo { /* APLICADO PRIMEIRO id*/
+	color: yellow;
+}
+

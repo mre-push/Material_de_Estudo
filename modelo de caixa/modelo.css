@@ -1,0 +1,45 @@
+/*
+Modelo de Caixa:
+   O padding é contabilizado com o tamanho total da nossa caixa, 
+então o width se for aumentado em 20 e o padding right diminuído em 
+20, ficaremos com o mesmo tamanho da caixa.
+*/
+
+.conteudo {
+	border: 1px solid red;
+	padding-top: 20px; /* distância superior a caixa */
+    padding-right: 20px; /* distância a direita na caixa */
+    padding-bottom: 20px; /* distância a esquerda na caixa */
+    padding-left: 20px; /* distância abaixo a caixa */
+   
+
+   /* padding: 20px 15px 10px 5px; */
+   /* padding: 20px 5px;
+
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    */
+
+    margin: 10px;
+
+	width: 100px;
+}
+
+.conteudo2 {
+	margin: 5px;
+	width: 150px;
+	border: 1px solid red;
+}
+
+#noticia{
+	background: blue;
+	border: 1px;
+	padding: 10px;
+}
+
+h2 {
+	border: 1px solid red;
+	margin: 0px;
+}

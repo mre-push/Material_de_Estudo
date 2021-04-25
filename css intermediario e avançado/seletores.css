@@ -1,0 +1,44 @@
+body {
+	background: black;
+}
+/****************************************/
+/*Seletor Universal*/
+* {
+	border: 1px solid red;
+}
+
+/****************************************/
+/*Seletor de texto*/
+h1 {
+	color: blue;
+}
+/****************************************/
+/*Seletor de classe*/
+.verde {
+	color: green;
+}
+
+p.verde {
+	color: red; /*Esse no caso aplica uma seleção de classe para um determinado elemento, o P no caso.*/
+}
+/*Seletor de ID*/
+#cabecalho {
+	border: 1px solid black;
+}
+/*Seletor de filho*/
+li>a {
+	color: yellow;
+	text-decoration: none;
+}
+/*Seletor de descendente*/
+p a {
+	color: pink;
+}
+/*Seletor irmão adjacente*/
+h1 + p{
+	color: white;
+}
+/*Seletor de irmão Geral*/
+h1 ~ p{
+	color: gray;
+}

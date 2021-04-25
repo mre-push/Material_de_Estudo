@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Elementos flutuates na prática, inline, block, inline in block</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			.borda1 {
+			       border: 1px solid red;
+			       display: inline;
+			       background: white;
+			}
+			.borda2 {
+			       border: 1px solid red;
+			       display: block;
+			       background: white;
+			}
+			.borda3 {
+			       border: 1px solid red;
+			       display: inline-block;
+			       background: white;
+			}
+            body {
+            	background: black;
+            }
+
+			#principal {
+				width: 920px;
+				border: 1px solid red;
+			}
+
+			.noticia {
+				background: #e5e5e5;
+				padding: 5px;
+				width: 280px;
+				margin: 7px;
+				float: left;
+			}
+
+			.imagem-galeria {
+				background: white;
+				width: 280px;
+				padding: 5px;
+				float: right;
+				margin: 7px;
+			}
+
+			.clear {
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="principal">
+
+          <div>
+		          	<div class="noticia">
+		          		<h2>Lorem ipsum</h2>
+		          		<p>
+		          			É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao examinar seu layout. O objetivo de usar Lorem Ipsum é que ele tem uma distribuição de letras mais ou menos normal, ao contrário de usar 'Conteúdo aqui, conteúdo aqui', fazendo com que pareça um inglês legível.
+		          		</p>
+		          		<a href="">Veja Mais</a>
+		          	</div>
+		          	<div class="noticia">
+		          		<h2>Ipsum</h2>
+		          		<p>
+		          			É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao examinar seu layout. O objetivo de usar Lorem Ipsum é que ele tem uma distribuição de letras mais ou menos normal, ao contrário de usar 'Conteúdo aqui, conteúdo aqui', fazendo com que pareça um inglês legível.
+		          		</p>
+		          		<a href="">Veja Mais</a>
+		          	</div>
+		          	<div class="noticia">
+		          		<h2>Lor</h2>
+		          		<p>
+		          			É um fato estabelecido há muito tempo que um leitor se distrairá com o conteúdo legível de uma página ao examinar seu layout. O objetivo de usar Lorem Ipsum é que ele tem uma distribuição de letras mais ou menos normal, ao contrário de usar 'Conteúdo aqui, conteúdo aqui', fazendo com que pareça um inglês legível.
+		          		</p>
+		          		<a href="">Veja Mais</a>
+		          	</div>
+	          	<!--<hr class="clear">-->
+
+	    </div><!--fim noticias-->
+    
+
+	          <div class="clear"></div>
+	            	
+	          <div>
+
+	          	<div class="imagem-galeria">
+	          		<img src="imagens/imagem1.png">
+	          		<p>Resumo</p>
+	          	</div>
+
+	            <div class="imagem-galeria">
+	          		<img src="imagens/imagem2.png">
+	          		<p>Resumo</p>
+	          	</div>
+	    
+	    	    <div class="imagem-galeria">
+	          		<img src="imagens/imagem3.png">
+	          		<p>Resumo</p>
+	          	</div>
+	    
+	    	    <div class="imagem-galeria">
+	          		<img src="imagens/imagem4.png">
+	          		<p>Resumo</p>
+	          	</div>
+	    
+	    
+	          </div>
+
+          </div><!--fim principal-->
+
+          <h1 class="borda1">Inline</h1>
+          <h1 class="borda1">Inline</h1>
+
+          <h1 class="borda2">Block</h1>
+          <h1 class="borda2">Block</h1>
+
+          <h1 class="borda3">Inline-block</h1>
+          <h1 class="borda3">Inline-block</h1>
+	</body>
+</html>
